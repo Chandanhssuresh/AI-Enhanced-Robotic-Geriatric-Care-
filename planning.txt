@@ -1,0 +1,42 @@
+Website for AI-Enhanced Robotic geriatric care 
+"""Frontend: Next.js (App Router), Tailwind CSS, shadcn/ui, Framer Motion, lucide-react, recharts.
+Backend: Flask API (JWT auth, TOTP 2FA, rate limit, input validation), Argon2 password hashing.
+Database: Supabase (Postgres + Realtime + Storage), RLS policies, triggers, audit logs.
+
+background : just like shadcn official website interface and buttons and text all font style should be like that 
+First Cover page
+""" Animated page for as our project with details about project when i scroll down and two transparent
+hovering white color glowing buttons named signup and signin """
+
+Second page 
+""" When i click signup button in cover page it must procced me to next page containing details about use such as First Name , Last Name , phone number , email ,Username , new password , confirm password
+then if i click signup after filling all the details it must store all these details in a table called Signuppage
+In supabase Signuppage table must consist of all the First Name ,Last Name , phone number , email ,Username, new password"""
+
+Third step : 
+""" In coverpage when i click signin button it must proceed to next another page where it must ask for authentication by asking email/Username , password then it must check in supabase Signuppage table that this username and password matches or not. If it is not matches there it must tell me to to signup or next it must proceed to next(place suitable trigger oparation  in this for database) 
+dashboard page NOTE THIS : Once i signin it must ask once again even after when i close this page """
+
+Dashboard page : 
+""" The dashboard page must look like an official website dashboard it must have profile with avatar(shadcnui component)where data is collected from Signuppage table and it must also have option for edit the profile what i will edit must also get chaged in Signuppage table(place an trigger operation in table such that it must show as profile edited successfully) and logout like other webistes market in red glowing hover button
+""" In the dashboard 4 larger square shape transparent glowing hover buttons named as Health condition , Face Emotion ,Speech Recognition, Intrusion detection Under these Buttons when i scroll down a chart graph like structure must be there where it represents variations from Health condition , Face emotion , speech emotion 
+""" In DashBoard page when i click on Health condition it must proceed me to next page Health data page
+"""In DashBoard page when i click on Face Emotion it must proceed me to next page Face emotion data page
+"""In DashBoard page when i click on Speech Recognition it must proceed me to next page Speech Recognition data page
+"""In DashBoard page when i click on Intrusion detection it must proceed me to next page Intrusion detection data page
+
+Health data page :
+""" this page must consist of Health data collected from real time sensors on robot the health parameter such as Heart rate , spo2 ,Body temperature and predicted health condition(evaluated by ml model) (store this data in Healthdata table in supabase) . Under this a chart like graph structure representing Body temperature , Spo2 , heart rate variations in real time and give me(Creator) an option for uploading models it must be visble only for me in code not on webpage
+
+Face emotion data page : 
+""" this page must consist of Face emotion data collected from real time sensors on robot the face emotion such as Happy , Sad , Angry , Neutral and predicted face emotion(evaluated by ml model) (store this data in Faceemotiondata table in supabase) . Under this a chart like graph structure representing Happy , Sad , Angry , Neutral variations in real time and give me(Creator) an option for uploading models it must be visble only for me in code not on webpage
+
+Speech Recognition data page : 
+""" this page must consist of Speech Recognition data collected from real time sensors on robot the speech emotion such as Happy , Sad , Angry , Neutral and predicted speech emotion(evaluated by ml model) (store this data in Speecemotiondata table in supabase) . Under this a chart like graph structure representing Happy , Sad , Angry , Neutral variations in real time and give me(Creator) an option for uploading models it must be visble only for me in code not on webpage
+
+Intrusion detection data page : 
+""" this page must consist of Intrusion detection data collected from real time sensors on robot the intrusion detection such as Intrusion detected , No intrusion detected and predicted intrusion detection(evaluated by ml model) (store this data in Intrusiondata table in supabase) . Under this a chart like graph structure representing Intrusion detected , No intrusion detected variations in real time and give me(Creator) an option for uploading models it must be visble only for me in code not on webpage
+
+Care taker dashboard :
+""" 
+
