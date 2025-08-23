@@ -37,6 +37,13 @@ Speech Recognition data page :
 Intrusion detection data page : 
 """ this page must consist of Intrusion detection data collected from real time sensors on robot the intrusion detection such as Intrusion detected , No intrusion detected and predicted intrusion detection(evaluated by ml model) (store this data in Intrusiondata table in supabase) . Under this a chart like graph structure representing Intrusion detected , No intrusion detected variations in real time and give me(Creator) an option for uploading models it must be visble only for me in code not on webpage
 
-Care taker dashboard :
-""" 
+Care taker page :
+""" when i click on care taker button on first most coverpage it must proceed me to page where signin signup option which same resembles as in elderly person sigin page 
+but in database it has seperate table for care taker credentials when care taker clicks on signup it must ask all details and after signup when he wants to 
+signin it must check the table in supabase of care taker credentials if it matches it must proceed care taker to next page called "connect page" """"
 
+Connect page :
+""" by clicking Add new patient connect button this page asks the care taker for which elderly-person you want to connect by asking eldrly person credentials such as email/username and password it must check with signup page table in supabase of elderly person interface then if it matches it must send one notification to elderly person where it ask permission of elderly person whether to allow care taker or not """
+
+update caretaker dashboard :
+""" 
